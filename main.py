@@ -1,6 +1,4 @@
 import os
-from typing import List, Dict
-
 import argparse
 import clip
 import lavis
@@ -8,10 +6,8 @@ import numpy as np
 import termcolor
 import torch
 torch.multiprocessing.set_sharing_strategy('file_system')
-from dataset_cirr import CIRR
-from evaluate import generate_cirr_test_submissions
-import prompts
 import utils
+from evaluate import generate_cirr_test_submissions
                 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
